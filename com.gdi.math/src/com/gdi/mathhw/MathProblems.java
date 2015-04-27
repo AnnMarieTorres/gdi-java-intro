@@ -69,13 +69,14 @@ public class MathProblems {
 		// WHICH NUMBER, X OR Y, IS LARGER?
 		
 		//Conditional with 'if' statements
-			if (x > y){
+			if (x > y) {
 				System.out.println("X is the larger number");
-			}else if (y > x){
+			} else if (y > x) {
 				System.out.println("Y is the larger number");
-			}else 
+			} else {
 				System.out.println("X and Y are equal");
-
+			}
+			
 		//Without 'if' statements
 			boolean xIsGreater = x > y;
 			boolean yIsGreater = y > x;
