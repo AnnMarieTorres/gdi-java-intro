@@ -18,23 +18,23 @@ public class MathProblems {
 		
 		// ARE X AND Y EVEN NUMBERS?
 		boolean xIsEven;
-		xIsEven = x % 2 == 0; 
+		xIsEven = x%2 == 0; 
 		System.out.println("Is x an even number? : " + xIsEven );
 		
-		boolean yIsEven = x % 2 == 0; 
+		boolean yIsEven = y%2 == 0; 
 		System.out.println("Is y an even number? : " + yIsEven );
 		
 		
 		// ARE THEY DIVISIBLE BY 3?
-		boolean xIsDivThree = x % 3 == 0;
-		boolean yIsDivThree = x % 3 == 0;
+		boolean xIsDivThree = x%3 == 0;
+		boolean yIsDivThree = y%3 == 0;
 		System.out.println("Is x divisible by 3? : " + xIsDivThree);
 		System.out.println("Is y divisible by 3? : " + yIsDivThree);
 		
 		
 		// WHAT IS X^3? (x cubed)
-		int xCubed = x * x * x;
-		int yCubed = y * y * y;
+		int xCubed = x*x*x;
+		int yCubed = y*y*y;
 		System.out.println("x^3 : " + xCubed);
 		System.out.println("y^3 : " + yCubed);
 		
@@ -48,7 +48,7 @@ public class MathProblems {
 		
 		// IF X AND Y WERE THE LENGTHS OF THE SHORT SIDES OF A RIGHT TRIANGLE,
 		// WHAT WOULD BE THE VALUE OF THE HYPTOENUSE OF THAT RIGHT TRIANGLE?
-		double hypotenuse = Math.sqrt((x * x) + (y * y));
+		double hypotenuse = Math.sqrt(x*x + y*y);
 		System.out.println("The hypotenuse of x and y's triangle is : " + hypotenuse);
 		
 		
@@ -57,12 +57,14 @@ public class MathProblems {
 		// WHAT IS YOUR TOTAL BILL?
 		double orangePrice = 0.65;
 		double applePrice = 0.55;
-		double totalBill = (x * orangePrice) + (y * applePrice);
+		double totalBill = (x*orangePrice) + (y*applePrice);
 		System.out.println("My apples and oranges bill is : $" + totalBill);
 		
 		// Why is my double $2.4000000000000004? http://floating-point-gui.de/basic/
 		// Solution: truncate the totalBill to two decimal places
 		System.out.printf("My apples and oranges bill is : $%.2f" + "\r", totalBill);
+		
+		//Or use BigDecimal
 		
 		// WHICH NUMBER, X OR Y, IS LARGER?
 		
